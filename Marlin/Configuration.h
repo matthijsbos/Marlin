@@ -33,7 +33,7 @@
 // Megatronics =70
 
 #ifndef MOTHERBOARD
-#define MOTHERBOARD 7
+#define MOTHERBOARD 62
 #endif
 
 
