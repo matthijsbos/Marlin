@@ -238,7 +238,7 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 #define DISABLE_E false // For all extruders
 
 #define INVERT_X_DIR true    // for Mendel set to false, for Orca set to true
-#define INVERT_Y_DIR false    // for Mendel set to true, for Orca set to false
+#define INVERT_Y_DIR true    // for Mendel set to true, for Orca set to false
 #define INVERT_Z_DIR true     // for Mendel set to false, for Orca set to true
 #define INVERT_E0_DIR true   // for direct drive extruder v9 set to true, for geared extruder set to false
 #define INVERT_E1_DIR false    // for direct drive extruder v9 set to true, for geared extruder set to false
@@ -247,7 +247,7 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 // ENDSTOP SETTINGS:
 // Sets direction of endstops when homing; 1=MAX, -1=MIN
 #define X_HOME_DIR -1
-#define Y_HOME_DIR -1
+#define Y_HOME_DIR 1
 #define Z_HOME_DIR -1
 
 #define min_software_endstops true //If true, axis won't move to coordinates less than HOME_POS.
@@ -328,9 +328,8 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 
 
 //automatic expansion
- #define ULTIPANEL
- #define NEWPANEL
-#endif 
+// #define ULTIPANEL
+// #define NEWPANEL
 
 
 // Preheat Constants
@@ -367,6 +366,6 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 //#define SF_ARC_FIX
 
 #include "Configuration_adv.h"
-#include "thermistortables.h"
+#include "thermistortables.h"4
 
 #endif //__CONFIGURATION_H
